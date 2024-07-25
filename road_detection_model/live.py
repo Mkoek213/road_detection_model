@@ -3,9 +3,11 @@ import cv2
 import cvzone
 import math
 
-cap = cv2.VideoCapture(0)
-cap.set(3, 640)
-cap.set(4, 480)
+# cap = cv2.VideoCapture(0) # for webcam
+# cap.set(3, 640)
+# cap.set(4, 480)
+cap = cv2.VideoCapture("Images/video1.webm") # for video
+
 
 model = YOLO("Models/yolov8n.pt")
 
@@ -38,4 +40,4 @@ while True:
             cvzone.putTextRect(img, f"{classNames[int(cls)]} {conf}", (max(0, x1), max(35, y1)))
 
     cv2.imshow("Image", img)
-    cv2.waitKey(1)
+    cv2.waitKey(5)
