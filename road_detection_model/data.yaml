@@ -1,0 +1,19 @@
+train: images/trains
+val: images/valids  # Ensure you have validation images, or adjust accordingly
+test: images/test  # Optional, if you have a test set
+
+nc: 13  # Number of classes in your dataset
+names:
+  0: 'pedestrian'
+  1: 'rider'
+  2: 'car'
+  3: 'bus'
+  4: 'truck'
+  5: 'bicycle'
+  6: 'motorcycle'
+  7: 'green light'
+  8: 'red light'
+  9: 'yellow light'
+  10: 'traffic light'
+  11: 'traffic sign'
+  12: 'train'

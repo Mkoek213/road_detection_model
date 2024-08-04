@@ -1,0 +1,13 @@
+train: road_detection/train/images
+val: road_detection/valid/images
+test: road_detection/test/images
+
+nc: 11
+names: ['car', 'different-traffic-sign', 'green-traffic-light', 'motorcycle', 'pedestrian', 'pedestrian-crossing', 'prohibition-sign', 'red-traffic-light', 'speed-limit-sign', 'truck', 'warning-sign']
+
+roboflow:
+  workspace: roaddetectiondataset
+  project: roaddetectiom-z_ramka
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/roaddetectiondataset/roaddetectiom-z_ramka/dataset/1
