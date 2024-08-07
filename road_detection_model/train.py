@@ -3,7 +3,7 @@ import torch
 from ultralytics import YOLO
 
 
-def train_model(model_path, data_path, save_path, stage, epochs=100, imgsz=640, batch_size=16, time = 42, run_dir='runs'):
+def train_model(model_path, data_path, save_path, stage, epochs=100, imgsz=640, batch_size=16, time = 44, run_dir='runs'):
     """
     Train or fine-tune a YOLO model.
 
