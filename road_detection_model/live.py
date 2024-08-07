@@ -118,7 +118,7 @@ if __name__ == "__main__":
         setting='static',
         wait_key=5,
         classNames=class_names_finetuned,
-        video_path='test_images/video1.webm'
+        video_path='test_images/test_film.mp4'
     )
 
 
